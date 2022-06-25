@@ -34,7 +34,6 @@ const Stacked = ({ width, height }) => {
     >
       <Inject services={[StackingColumnSeries, Category, Legend, Tooltip]} />
       <SeriesCollectionDirective>
-        {/* eslint-disable-next-line react/jsx-props-no-spreading */}
         {stackedCustomSeries.map((item, index) => (
           <SeriesDirective key={index} {...item} />
         ))}
